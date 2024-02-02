@@ -1,42 +1,113 @@
-.bg-container {
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+
+.google-suggestions-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  margin-top: 125px;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  width: 35%;
-  box-shadow: 0px 2px 4px 0px;
-  border-radius: 10px;
-  padding: 15px;
+@media screen and (min-width: 768px) {
+  .google-suggestions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+  }
 }
 
 .google-logo {
-  height: 85px;
-  width: 250px;
-  margin-bottom: 20px;
+  width: 150px;
+  height: 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .google-logo {
+    width: 432px;
+    height: 140px;
+  }
+}
+
+.search-input-suggestions-container {
+  width: 300px;
+  border-radius: 12px;
+  margin-top: 24px;
+  box-shadow: 0px 0px 10px 0px #bfbfbf;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-suggestions-container {
+    width: 600px;
+    border-radius: 20px;
+    margin-top: 48px;
+  }
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    padding-top: 4px;
+    padding-left: 12px;
+    padding-bottom: 4px;
+    padding-right: 12px;
+  }
 }
 
 .search-icon {
-  height: 18px;
-  width: 18px;
+  width: 16px;
+  height: 16px;
 }
 
-.input {
-  margin-left: 8px;
-  height: 30px;
-  width: 90%;
-  outline: none;
-  border-style: none;
+@media screen and (min-width: 768px) {
+  .search-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.search-input {
+  color: #64748b;
+  font-family: 'Roboto';
   font-size: 16px;
-  color: #bfbfbf;
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin-left: 16px;
+  outline: none;
 }
 
-.list-container {
-  list-style: none;
-  width: 93%;
+@media screen and (min-width: 768px) {
+  .search-input {
+    font-size: 20px;
+    height: 40px;
+    margin-left: 8px;
+  }
+}
+
+.suggestions-list {
+  padding-left: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .suggestions-list {
+    padding-left: 24px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+  }
 }
