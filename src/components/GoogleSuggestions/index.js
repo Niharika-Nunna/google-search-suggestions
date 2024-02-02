@@ -45,6 +45,7 @@ class GoogleSuggestions extends Component {
             {filteredList.map(eachItem => (
               <SuggestionItem
                 suggestionDetails={eachItem}
+                key={eachItem.id}
                 updateSearchInput={this.updateSearchInput}
               />
             ))}

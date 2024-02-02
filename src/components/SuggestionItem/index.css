@@ -8,11 +8,13 @@
 .arrow-img {
   height: 20px;
   width: 20px;
+  color: #64748b;
 }
 
 .suggestion {
   font-family: 'Roboto';
   font-size: 16px;
+  color: #475569;
 }
 
 .button {
