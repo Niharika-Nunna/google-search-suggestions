@@ -3,17 +3,23 @@ import './index.css'
 const SuggestionItem = props => {
   const {suggestionDetails, updateSearchInput} = props
   const {suggestion} = suggestionDetails
-  const onClicked = () => {
+
+  const onClickSuggestion = () => {
     updateSearchInput(suggestion)
   }
+
   return (
-    <li className="suggestion-item-container">
-      <p className="suggestion">{suggestion}</p>
-      <button className="button" type="button" onClick={onClicked}>
+    <li className="suggestion-item">
+      <p className="suggestion-text">{suggestion}</p>
+      <button
+        type="button"
+        className="arrow-button"
+        onClick={onClickSuggestion}
+      >
         <img
           src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
           alt="arrow"
-          className="arrow-img"
+          className="arrow"
         />
       </button>
     </li>
